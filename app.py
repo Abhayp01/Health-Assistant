@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request, jsonify
 from boltiotai import openai
-openai.api_key = os.getenv('OPENAI_API_KEY', 'pwBJrcN-Mu_jC35TutKwmmhpYcYv7znCm5fCJyScQEU')
+openai.api_key = os.getenv('OPENAI_API_KEY', 'OPENAI_API_KEY')
 
 app = Flask(__name__, static_folder='static', template_folder='templates')
 GREETINGS = ["hi", "hello", "hey", "good morning", "good afternoon", "good evening"]
